@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grow Your Business | ABC Trainerize</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="feature-page">
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">ABC</span>
+        <span class="logo-type">Trainerize</span>
+      </a>
+      <div class="feature-nav">
+        <a href="feature-coaching.html" class="feature-nav__link">Training</a>
+        <a href="feature-engagement.html" class="feature-nav__link">Engagement</a>
+        <a href="feature-business.html" class="feature-nav__link is-active">Business</a>
+        <a class="button button--ghost" href="index.html#trial" data-open-trial>Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="feature-hero feature-hero--business">
+      <div class="container feature-hero__grid">
+        <div>
+          <p class="eyebrow">Operations & Revenue</p>
+          <h1>Run your business from one platform.</h1>
+          <p>
+            Simplify scheduling, payments, and sales flows with tools designed for fitness businesses. Sell digital products, manage
+            staff, and automate renewals while clients enjoy a seamless experience.
+          </p>
+          <div class="feature-hero__actions">
+            <a class="button" href="index.html#trial" data-open-trial>Launch free trial</a>
+            <a class="button button--ghost-blue" href="#revenue">Explore revenue tools</a>
+          </div>
+        </div>
+        <div class="feature-hero__media">
+          <img src="https://file.trainerize.com/assets/tz/home/images/get-and-keep-clients.png" alt="Business growth dashboard" />
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-detail" id="revenue">
+      <div class="container feature-detail__grid">
+        <div>
+          <h2>Sell and scale programs</h2>
+          <p>
+            Launch memberships, packages, and one-time programs in minutes. Upsell add-ons at checkout and automate renewals with
+            flexible billing logic.
+          </p>
+          <ul class="feature-list">
+            <li>Integrated checkout with cards, ACH, Apple Pay, and Google Pay.</li>
+            <li>Automations that trigger plan upgrades, downgrades, or renewals.</li>
+            <li>Promo codes, referrals, and gifting to boost conversions.</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h3>Streamlined admin</h3>
+          <p>
+            Keep calendars, staff availability, and client data in sync. Track attendance, no-shows, and payroll with ease.
+          </p>
+          <ul class="feature-list feature-list--compact">
+            <li>Session booking with automated reminders and waitlists.</li>
+            <li>Role-based permissions for trainers, managers, and front desk.</li>
+            <li>Analytics dashboards for revenue, retention, and utilization.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-detail feature-detail--alt">
+      <div class="container feature-detail__grid">
+        <div>
+          <h2>Integrate your tech stack</h2>
+          <p>
+            Connect marketing sites, CRM systems, and access control. Trainerize plays nicely with your favorite platforms so your data
+            flows automatically.
+          </p>
+          <ul class="feature-list">
+            <li>Open APIs and Zapier support to sync leads and clients.</li>
+            <li>Embed widgets for lead capture, class schedules, and checkouts.</li>
+            <li>Export-ready reports for finance and leadership teams.</li>
+          </ul>
+        </div>
+        <aside class="feature-aside">
+          <h3>Enterprise ready</h3>
+          <p>Scale across locations with centralized branding, templates, and global permissions.</p>
+          <a class="button button--ghost-blue" href="index.html#trial" data-open-trial>Talk to sales</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div class="feature-cta" id="trial">
+    <div class="container feature-cta__inner">
+      <div>
+        <h2>Power your entire business.</h2>
+        <p>Start your 30-day trial to streamline operations and grow recurring revenue.</p>
+      </div>
+      <a class="button button--light" href="index.html#trial" data-open-trial>Start free trial</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom__inner">
+      <p>© <span id="year"></span> ABC Trainerize. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="feature-coaching.html">Training</a>
+        <a href="feature-engagement.html">Engagement</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

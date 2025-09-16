@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coach in Every Way | ABC Trainerize</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="feature-page">
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">ABC</span>
+        <span class="logo-type">Trainerize</span>
+      </a>
+      <div class="feature-nav">
+        <a href="feature-coaching.html" class="feature-nav__link is-active">Training</a>
+        <a href="feature-engagement.html" class="feature-nav__link">Engagement</a>
+        <a href="feature-business.html" class="feature-nav__link">Business</a>
+        <a class="button button--ghost" href="index.html#trial" data-open-trial>Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="feature-hero">
+      <div class="container feature-hero__grid">
+        <div>
+          <p class="eyebrow">Training & Programming</p>
+          <h1>Coach in every way imaginable.</h1>
+          <p>
+            Deliver periodized workouts, goal-based plans, and mixed training formats without leaving a single dashboard. ABC
+            Trainerize brings your programming, client data, and progress tracking together so you can coach without limits.
+          </p>
+          <div class="feature-hero__actions">
+            <a class="button" href="index.html#trial" data-open-trial>Start free trial</a>
+            <a class="button button--ghost-blue" href="#curriculum">View curriculum</a>
+          </div>
+        </div>
+        <div class="feature-hero__media">
+          <img src="https://file.trainerize.com/assets/tz/home/images/coach-your-clients.png" alt="Trainer guiding client from app" />
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-detail" id="curriculum">
+      <div class="container feature-detail__grid">
+        <div>
+          <h2>Design workouts in minutes</h2>
+          <p>
+            Drag-and-drop exercises, reuse saved templates, or import entire programs. Suggested progressions and periodization tools
+            make it effortless to deliver 4, 8, or 12 week blocks that evolve with your clients.
+          </p>
+          <ul class="feature-list">
+            <li>Build using a 1,500+ exercise video library or upload your own.</li>
+            <li>Schedule workouts, recovery days, and benchmarks on a visual client calendar.</li>
+            <li>Automate progressions with smart rules for reps, load, tempo, and rest.</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h3>Deliver complete plans</h3>
+          <p>
+            Combine training, habits, and nutrition targets in a single phased plan. Clients see their entire journey while you stay in
+            control of every milestone.
+          </p>
+          <ul class="feature-list feature-list--compact">
+            <li>Assign macronutrient ranges and meal plan PDFs.</li>
+            <li>Stack habits like hydration, mobility, or recovery check-ins.</li>
+            <li>Automated reminders keep clients on track each day.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-detail feature-detail--alt">
+      <div class="container feature-detail__grid">
+        <div>
+          <h2>Coach anywhere</h2>
+          <p>
+            Stream workouts, share video feedback, and update programs from any device. Clients can log sessions in the app, on a
+            smartwatch, or straight from a gym kiosk—all synced back to your dashboard.
+          </p>
+          <ul class="feature-list">
+            <li>Two-way messaging with video, voice, and file attachments.</li>
+            <li>Live session tracking and real-time performance insights.</li>
+            <li>Offline mode ensures clients can access programs without signal.</li>
+          </ul>
+        </div>
+        <aside class="feature-aside">
+          <h3>Integrations included</h3>
+          <p>Connect wearables, heart rate monitors, and nutrition apps to create a unified view of every client.</p>
+          <div class="integration-logos">
+            <img src="https://file.trainerize.com/assets/tz/home/images/app-integrations-logos.png" alt="Integration logos" />
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div class="feature-cta" id="trial">
+    <div class="container feature-cta__inner">
+      <div>
+        <h2>Ready to build smarter programs?</h2>
+        <p>Start your 30-day trial and explore the full training toolkit.</p>
+      </div>
+      <a class="button button--light" href="index.html#trial" data-open-trial>Start free trial</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom__inner">
+      <p>© <span id="year"></span> ABC Trainerize. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="feature-engagement.html">Engagement</a>
+        <a href="feature-business.html">Business</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
