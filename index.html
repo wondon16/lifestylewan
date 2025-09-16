@@ -1,278 +1,391 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Lifestyle Wan — Fuel your Body</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC Trainerize | Blue + White Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="logoemblem/lifestyle11.png" />
-  <link rel="manifest" href="manifest.webmanifest" />
-  <meta name="theme-color" content="#00aaff" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <link rel="apple-touch-icon" href="logoemblem/lifestyle11.png" />
 </head>
 <body>
-  <div class="moving-bg sky-parallax" aria-hidden="true"></div>
-
-  <header class="topbar">
-    <div class="logo">Lifestyle Wan</div>
-    <nav class="nav">
-      <a href="index.html" class="nav-link active">Dashboard</a>
-      <a href="nutrition.html" class="nav-link">Nutrition</a>
-      <a href="training.html" class="nav-link">Training</a>
-      <a href="recovery.html" class="nav-link">Recovery</a>
-      <a href="supplements.html" class="nav-link">Supplements</a>
-      <a href="microdose.html" class="nav-link">Microdosing</a>
-    </nav>
-    <button id="saveBtn" class="btn ghost">Save Progress</button>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">ABC</span>
+        <span class="logo-type">Trainerize</span>
+      </a>
+      <nav class="primary-nav">
+        <a class="primary-nav__link" href="feature-coaching.html">Training</a>
+        <a class="primary-nav__link" href="feature-engagement.html">Engagement</a>
+        <a class="primary-nav__link" href="feature-business.html">Business</a>
+        <a class="primary-nav__link" href="#homepage-app-integration">Integrations</a>
+      </nav>
+      <button class="button button--ghost" type="button" data-open-trial>Get started</button>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="hero-3d card">
-      <div class="hero-3d-left">
-        <div class="intro-badge">Fuel your Body</div>
-        <h1 class="title-3d">Lifestyle Wan</h1>
-        <p class="lead">Personalized training, nutrition, and recovery—crafted by your inputs. Fully customizable plans with an interactive calendar and modular tools.</p>
-        <div class="floating-actions">
-          <a class="fab-mini" href="training.html" aria-label="Training">🏋️ Training</a>
-          <a class="fab-mini" href="therapies.html" aria-label="Therapies">🧊 Therapies</a>
-          <a class="fab-mini" href="program.html" aria-label="Program">📅 Program</a>
-          <a class="fab-mini" href="nutrition.html" aria-label="Meal Plan">🍽️ Meal Plan</a>
-          <a class="fab-mini" href="training.html#calendar" aria-label="Calendar">🗓️ Calendar</a>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>The #1 coaching app to better engage your clients.</h1>
+          <p>
+            Take your coaching online and deliver an experience like nothing your clients have ever seen before. With fitness,
+            to motivate and inspire.
+          </p>
+          <form class="hero-form">
+            <label class="sr-only" for="hero-email">Enter your email</label>
+            <input id="hero-email" type="email" placeholder="Enter your email" />
+            <button class="button" type="button" data-open-trial>Get started</button>
+          </form>
+          <p class="form-caption">
+            Start your trial and enjoy 30 days free with unlimited clients.<br />No credit card required.
+          </p>
         </div>
-      </div>
-      <div class="hero-3d-scene">
-        <!-- Stylized 3D-ish SVG scene: Mushroom man bench pressing, forest, gear, smoke -->
-        <svg id="sceneSVG" viewBox="0 0 900 520" class="scene" role="img" aria-label="Mushroom character bench pressing in a forest with workout gear and smoke">
-          <defs>
-            <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#e6f7ff"/>
-              <stop offset="70%" stop-color="#bfefff"/>
-              <stop offset="100%" stop-color="#7fd7ff"/>
-            </linearGradient>
-            <radialGradient id="capGrad" cx="50%" cy="40%" r="60%">
-              <stop offset="0%" stop-color="#ff6b6b"/>
-              <stop offset="80%" stop-color="#c73838"/>
-              <stop offset="100%" stop-color="#9e2b2b"/>
-            </radialGradient>
-            <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#e5e7eb"/>
-              <stop offset="50%" stop-color="#9ca3af"/>
-              <stop offset="100%" stop-color="#f3f4f6"/>
-            </linearGradient>
-            <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-              <feGaussianBlur stdDeviation="4" result="blur"/>
-              <feMerge>
-                <feMergeNode in="blur"/>
-                <feMergeNode in="SourceGraphic"/>
-              </feMerge>
-            </filter>
-          </defs>
-          <!-- Background sky -->
-          <rect x="0" y="0" width="900" height="520" fill="url(#skyGrad)"/>
-          <!-- Parallax mountains/forest -->
-          <g id="parallaxBack" opacity="0.6">
-            <path d="M0 360 L100 300 L180 340 L260 280 L360 330 L460 270 L560 320 L660 260 L760 310 L900 260 L900 520 L0 520 Z" fill="#bcdcff"/>
-            <path d="M0 400 L80 360 L160 390 L240 350 L320 380 L420 340 L520 370 L620 330 L720 360 L900 320 L900 520 L0 520 Z" fill="#a3d6ff"/>
-          </g>
-          <g id="trees" opacity="0.9">
-            <g fill="#86c5ff">
-              <polygon points="60,360 85,300 110,360"/>
-              <rect x="83" y="360" width="4" height="24"/>
-              <polygon points="160,370 185,310 210,370"/>
-              <rect x="183" y="370" width="4" height="24"/>
-              <polygon points="760,360 785,300 810,360"/>
-              <rect x="783" y="360" width="4" height="24"/>
-            </g>
-          </g>
-          <!-- Bench setup -->
-          <g id="bench" transform="translate(250,320)">
-            <rect x="-120" y="20" width="240" height="12" rx="6" fill="#374151"/>
-            <rect x="-80" y="0" width="160" height="20" rx="6" fill="#1f2937"/>
-            <rect x="-8" y="-40" width="16" height="40" rx="4" fill="#4b5563"/>
-          </g>
-          <!-- Barbell with plates -->
-          <g id="barbell" transform="translate(250,280)" filter="url(#softGlow)">
-            <rect x="-160" y="10" width="320" height="8" rx="4" fill="url(#metal)"/>
-            <g fill="#9ca3af">
-              <rect x="-180" y="4" width="18" height="20" rx="3"/>
-              <rect x="162" y="4" width="18" height="20" rx="3"/>
-            </g>
-            <g fill="#6b7280">
-              <rect x="-198" y="2" width="12" height="24" rx="2"/>
-              <rect x="186" y="2" width="12" height="24" rx="2"/>
-            </g>
-          </g>
-          <!-- Mushroom man on bench -->
-          <g id="mushroomMan" transform="translate(250,300)">
-            <!-- Body -->
-            <ellipse cx="0" cy="20" rx="30" ry="26" fill="#f4d7b8"/>
-            <!-- Head stem -->
-            <rect x="-12" y="-10" width="24" height="28" rx="8" fill="#f1cfa8"/>
-            <!-- Cap -->
-            <ellipse cx="0" cy="-12" rx="46" ry="30" fill="url(#capGrad)"/>
-            <circle cx="-16" cy="-16" r="6" fill="#fff"/>
-            <circle cx="12" cy="-14" r="7" fill="#fff"/>
-            <!-- Eyes -->
-            <circle cx="-16" cy="-16" r="2" fill="#111827"/>
-            <circle cx="12" cy="-14" r="2" fill="#111827"/>
-            <!-- Arms to bar -->
-            <g id="arms" transform="translate(0,6)">
-              <rect x="-60" y="0" width="60" height="8" rx="4" fill="#f1cfa8"/>
-              <rect x="0" y="0" width="60" height="8" rx="4" fill="#f1cfa8"/>
-            </g>
-          </g>
-          <!-- Weed canister & joint -->
-          <g id="gear" transform="translate(520,340)">
-            <rect x="0" y="0" width="44" height="28" rx="6" fill="#a7f3d0" stroke="#065f46" stroke-width="2"/>
-            <circle cx="12" cy="14" r="6" fill="#065f46"/>
-            <rect x="70" y="-6" width="56" height="8" rx="4" fill="#e5e7eb"/>
-            <rect x="120" y="-10" width="12" height="12" rx="3" fill="#fca5a5"/>
-          </g>
-          <!-- Smoke puffs from joint -->
-          <g id="smoke" transform="translate(640,330)" opacity="0.7">
-            <circle class="puff" cx="0" cy="0" r="6" fill="#ffffff"/>
-            <circle class="puff" cx="14" cy="-16" r="8" fill="#ffffff"/>
-            <circle class="puff" cx="-10" cy="-28" r="10" fill="#ffffff"/>
-          </g>
-          <!-- Foreground grass -->
-          <g id="fg" fill="#7dd3fc" opacity="0.9">
-            <path d="M0 460 Q200 430 400 460 T800 460 T900 450 L900 520 L0 520 Z"/>
-          </g>
-        </svg>
-      </div>
-    </section>
-    <section class="hero card">
-      <div class="hero-left">
-        <h2>Athlete Program: Now → March 1</h2>
-        <p class="lead">Build your personalized system from your inputs. Clean bulk meals, progressive training, and modern recovery tools.</p>
-        <div class="quick-stats">
-          <div>
-            <label>Current Weight</label>
-            <input id="currentWeight" type="number" value="185" /> lbs
-          </div>
-          <div>
-            <label>Target Weight</label>
-            <input id="targetWeight" type="number" value="207" /> lbs
-          </div>
-          <div>
-            <label>Weeks to Camp</label>
-            <div id="weeksToCamp">24</div>
-          </div>
-        </div>
-        <div class="hero-actions">
-          <a class="btn primary" href="training.html">Open Training Plan</a>
-          <a class="btn" href="nutrition.html">Open Meal Plan</a>
-        </div>
-      </div>
-      <div class="hero-right">
-        <div class="card stats">
-          <h3>Today</h3>
-          <ul>
-            <li>Training: <strong id="todayTraining">Lower Body Power</strong></li>
-            <li>Therapy: <strong id="todayTherapy">Red Light (15m)</strong></li>
-            <li>Meals logged: <strong id="mealsLogged">0</strong></li>
-          </ul>
-        </div>
-
-        <div class="card progress">
-          <h3>Progress to 207 lbs</h3>
-          <div class="progress-wrap">
-            <div class="progress-bar" id="weightProgress" style="width:0%">0%</div>
-          </div>
-          <small id="projETA">Estimated ETA: —</small>
+        <div class="hero-media">
+          <video class="hero-video" autoplay muted loop playsinline poster="https://file.trainerize.com/assets/tz/home/images/app-featrues-video-poster-v2.jpg">
+            <source src="https://file.trainerize.com/assets/tz/home/videos/app-features-v2.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </section>
 
-    <section class="grid cards">
-      <a class="card tile" href="nutrition.html">
-        <h4>Nutrition</h4>
-        <p>View dairy-free clean bulk meals, macro calculator, & recipes using beef, turkey, pasta, and plantains.</p>
-      </a>
-
-      <a class="card tile" href="training.html">
-        <h4>Training</h4>
-        <p>Full 24-week progressive QB program. No heavy back squats; trap bar and unilateral focus for heavy lifts.</p>
-      </a>
-
-      <a class="card tile" href="recovery.html">
-        <h4>Recovery</h4>
-        <p>Track HBOT, red light, sauna, cold plunge, PEMF and massage sessions. Contrast therapy planner included.</p>
-      </a>
-
-      <a class="card tile" href="supplements.html">
-        <h4>Supplements</h4>
-        <p>Manage creatine, beta-alanine, collagen, adaptogens, algal omega-3s, vitamin D, electrolytes.</p>
-      </a>
-
-      <a class="card tile" href="microdose.html">
-        <h4>Microdosing</h4>
-        <p>Journal microdosing sessions & effects (psilocybin / LSD). Safety reminders & legal disclaimer included.</p>
-      </a>
-
-      <div class="card tile">
-        <h4>Daily Check</h4>
-        <p>Complete daily check: hydration, sleep, readiness (HRV), soreness, nutrition adherence.</p>
-        <button class="btn" id="dailyCheckBtn">Open Daily Check</button>
+    <section class="trusted">
+      <div class="container">
+        <h2 class="section-title">Digitizing the member experience for coaches and fitness businesses of all sizes.</h2>
+        <div class="trusted-logos">
+          <img src="https://file.trainerize.com/assets/tz/home/images/digitizing-experience-golds-gym-logo.png" alt="Gold's Gym logo" />
+          <img src="https://file.trainerize.com/assets/tz/home/images/digitizing-experience-life-time.png" alt="Life Time logo" />
+          <img src="https://file.trainerize.com/assets/tz/home/images/digitizing-experience-ymca.png" alt="YMCA logo" />
+          <img src="https://file.trainerize.com/assets/tz/home/images/digitizing-experience-burn-boot-camp.png" alt="Burn Boot Camp logo" />
+          <img src="https://file.trainerize.com/assets/tz/home/images/digitizing-experience-alloy.png" alt="Alloy logo" />
+        </div>
       </div>
     </section>
 
-    <section class="card">
-      <h2>Calendar</h2>
-      <div class="calendar">
-        <div class="cal-header">
-          <div class="title" id="calMonthLabel">Month YYYY</div>
-          <div class="actions">
-            <button class="cal-btn" id="calPrev">Prev</button>
-            <button class="cal-btn" id="calToday">Today</button>
-            <button class="cal-btn" id="calNext">Next</button>
-            <button class="cal-btn" id="setProgramStart">Set Program Start</button>
+    <section class="features">
+      <div class="container features-stack">
+        <article class="feature feature--reverse">
+          <div class="feature-copy">
+            <h2>Coach your clients in every way imaginable</h2>
+            <p>
+              Deliver training programs, nutrition plans, and habit routines wherever your clients are—online, in person, and
+              everywhere in between.
+            </p>
+            <a class="feature-link" href="feature-coaching.html">Explore training tools</a>
           </div>
-        </div>
-        <div class="cal-legend">
-          <div class="cal-key"><span class="swatch power"></span> Lower Body Power</div>
-          <div class="cal-key"><span class="swatch upper"></span> Upper Power</div>
-          <div class="cal-key"><span class="swatch cond"></span> Conditioning</div>
-          <div class="cal-key"><span class="swatch expl"></span> Explosive</div>
-          <div class="cal-key"><span class="swatch reco"></span> Active Recovery</div>
-          <div class="cal-key"><span class="swatch skill"></span> Skill</div>
-          <div class="cal-key"><span class="swatch rest"></span> Rest</div>
-        </div>
-        <div class="cal-grid" id="calGrid">
-          <!-- Calendar renders here -->
-        </div>
-      </div>
-      <div class="day-schedule" id="daySchedule">
-        <!-- Selected day schedule renders here -->
+          <div class="feature-media">
+            <img src="https://file.trainerize.com/assets/tz/home/images/coach-your-clients.png" alt="Coach your clients" />
+          </div>
+        </article>
+        <article class="feature">
+          <div class="feature-copy">
+            <h2>Engage and motivate clients to crush their goals</h2>
+            <p>
+              Connect with clients on the go, cultivate your own online community, and drive motivation with badges, reactions, and
+              more.
+            </p>
+            <a class="feature-link" href="feature-engagement.html">See engagement features</a>
+          </div>
+          <div class="feature-media">
+            <img src="https://file.trainerize.com/assets/tz/home/images/engage-and-motivate.png" alt="Engage and motivate clients" />
+          </div>
+        </article>
+        <article class="feature feature--reverse">
+          <div class="feature-copy">
+            <h2>Manage and grow your business seamlessly</h2>
+            <p>
+              Effortlessly sell your products, schedule sessions, market your brand, and manage clients and your team—all within one
+              app.
+            </p>
+            <a class="feature-link" href="feature-business.html">View business tools</a>
+          </div>
+          <div class="feature-media">
+            <img src="https://file.trainerize.com/assets/tz/home/images/get-and-keep-clients.png" alt="Manage and grow your business" />
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="card logs">
-      <h3>Recent Logs</h3>
-      <div id="recentLogs">
-        <p class="muted">No logs yet. Start by recording a training session or meal.</p>
+    <section class="key-benefits">
+      <div class="container">
+        <div class="benefit-grid">
+          <article class="benefit">
+            <img src="https://file.trainerize.com/assets/tz/common-assets/icons/rebrand/ways-to-train.svg" alt="Ways to train" />
+            <h3>Showcase your brand</h3>
+            <p>
+              Drive engagement and promote your brand with Custom Branded Apps—the ultimate way to deliver a training experience that
+              is uniquely yours.
+            </p>
+          </article>
+          <article class="benefit">
+            <img src="https://file.trainerize.com/assets/tz/common-assets/icons/rebrand/build-your-brand.svg" alt="Build your brand" />
+            <h3>Track meals and macros</h3>
+            <p>
+              Deliver recipes and meal plans, monitor client macro tracking, measure progress and nutrition compliance, and help your
+              clients improve their health—one meal at a time.
+            </p>
+          </article>
+          <article class="benefit">
+            <img src="https://file.trainerize.com/assets/tz/common-assets/icons/rebrand/get-paid.svg" alt="Get paid" />
+            <h3>Automate payments</h3>
+            <p>
+              Our fully integrated payments features are built specifically for fitness businesses, making it easier than ever to
+              manage your packages, sessions, and digital memberships.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="segments">
+      <div class="container">
+        <h2 class="section-title">Join the movement</h2>
+        <p class="section-subtitle">
+          400K+ personal trainers and coaches and 45K+ health and fitness businesses power their coaching and member experience with
+          ABC Trainerize.
+        </p>
+        <div class="segment-cards">
+          <article class="segment-card">
+            <h3>Independent trainers</h3>
+            <p>
+              For entrepreneurial coaches who run, manage, or own their own coaching business. Save hours of admin work and deliver an
+              unparalleled personal coaching experience with ABC Trainerize.
+            </p>
+          </article>
+          <article class="segment-card">
+            <h3>Studios and gyms</h3>
+            <p>
+              For single or multi-location fitness studios and gyms. Craft your member experience through your own custom branded app,
+              powerful integrations, appointments, and more.
+            </p>
+          </article>
+          <article class="segment-card">
+            <h3>Clubs and franchises</h3>
+            <p>
+              Tap into the future of personal training and create a 360° member experience. ABC Trainerize offers a tailor-made
+              solution for your facility, helping to extend the platform benefits far beyond the walls of your club.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="integrations">
+      <div class="container integrations-grid">
+        <div class="integrations-copy">
+          <h2>Level up with powerful integrations</h2>
+          <p>
+            Effortlessly connect ABC Trainerize with the world's most powerful apps to level up your fitness and business software
+            stack.
+          </p>
+        </div>
+        <div class="integrations-media">
+          <img src="https://file.trainerize.com/assets/tz/home/images/app-integrations-logos.png" alt="App integrations" />
+        </div>
+      </div>
+    </section>
+
+    <section class="free-trial">
+      <div class="container free-trial-card">
+        <div class="free-trial-copy">
+          <h2>Start your <span>free 30-day</span> trial</h2>
+          <p>and fuel your business growth with ABC Trainerize.</p>
+        </div>
+        <form class="free-trial-form">
+          <label class="sr-only" for="trial-email">Enter your email</label>
+          <input id="trial-email" type="email" placeholder="Enter your email" />
+          <button class="button button--light" type="button" data-open-trial>Get started</button>
+          <p class="form-caption">Enjoy 30 days free with unlimited clients. No credit card required.</p>
+        </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div>© Lifestyle Wan</div>
-    <div class="muted small">Microdosing features are for journaling only. Consult a licensed clinician and verify local laws.</div>
+  <div class="trial-modal" id="trialModal" aria-hidden="true">
+    <div class="trial-modal__backdrop" data-close-trial></div>
+    <div class="trial-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="trialModalTitle">
+      <button class="trial-modal__close" type="button" aria-label="Close" data-close-trial>&times;</button>
+      <div class="trial-modal__steps" data-current-step="1">
+        <div class="trial-step" data-step="1">
+          <h3 id="trialModalTitle">Tell us about you</h3>
+          <p>Kick off your 30-day trial by sharing a few quick details.</p>
+          <form class="trial-form" autocomplete="off">
+            <label class="trial-field">
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Jane Doe" required />
+            </label>
+            <label class="trial-field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label class="trial-field">
+              <span>Business size</span>
+              <select name="size" required>
+                <option value="" disabled selected>Select one</option>
+                <option>Independent trainer</option>
+                <option>Studio or gym</option>
+                <option>Club or franchise</option>
+              </select>
+            </label>
+            <div class="trial-actions">
+              <button class="button" type="button" data-trial-next>Continue</button>
+            </div>
+          </form>
+        </div>
+        <div class="trial-step" data-step="2">
+          <h3>Customize your experience</h3>
+          <p>Pick your goals so we can tailor the trial for you.</p>
+          <form class="trial-form trial-form--options">
+            <label class="trial-option">
+              <input type="checkbox" name="goals" value="train-clients" />
+              <span>Deliver remote coaching</span>
+            </label>
+            <label class="trial-option">
+              <input type="checkbox" name="goals" value="grow-team" />
+              <span>Grow my team and revenue</span>
+            </label>
+            <label class="trial-option">
+              <input type="checkbox" name="goals" value="sell-products" />
+              <span>Sell programs or digital products</span>
+            </label>
+            <div class="trial-actions trial-actions--split">
+              <button class="button button--ghost-blue" type="button" data-trial-prev>Back</button>
+              <button class="button" type="button" data-trial-complete>Launch trial</button>
+            </div>
+          </form>
+        </div>
+        <div class="trial-step" data-step="3" aria-live="polite">
+          <h3>You're all set!</h3>
+          <p>Watch your inbox for a confirmation email and next steps to activate your ABC Trainerize trial.</p>
+          <div class="trial-actions">
+            <button class="button button--light" type="button" data-close-trial>Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-mark">ABC</span>
+          <span class="logo-type">Trainerize</span>
+        </div>
+        <p>All-in-one software to run your coaching business online and in person.</p>
+      </div>
+      <div class="footer-columns">
+        <div>
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">Workout builder</a></li>
+            <li><a href="#">Meal tracking</a></li>
+            <li><a href="#">Habit coaching</a></li>
+            <li><a href="#">In-app messaging</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="#">Independent trainers</a></li>
+            <li><a href="#">Studios &amp; gyms</a></li>
+            <li><a href="#">Clubs &amp; franchises</a></li>
+            <li><a href="#">Enterprise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Pricing guide</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Partner program</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <p>© <span id="year"></span> ABC Trainerize. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <!-- Floating bottom navigation inspired by Dribbble shot -->
-  <nav class="bottom-nav" aria-label="Primary">
-    <a href="index.html" class="bn-item active"><span>🏠</span><em>Home</em></a>
-    <a href="training.html" class="bn-item"><span>🏋️</span><em>Training</em></a>
-    <a href="program.html" class="bn-item center"><span>✨</span></a>
-    <a href="therapies.html" class="bn-item"><span>🧘</span><em>Therapies</em></a>
-    <a href="recovery.html" class="bn-item"><span>🛀</span><em>Recovery</em></a>
-    <a href="nutrition.html" class="bn-item"><span>🍽️</span><em>Meals</em></a>
-    <a href="supplements.html" class="bn-item"><span>💊</span><em>Supps</em></a>
-  </nav>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-  <script src="app.js"></script>
+    const trialModal = document.getElementById('trialModal');
+    const stepContainer = trialModal.querySelector('.trial-modal__steps');
+
+    const setStep = (step) => {
+      stepContainer.setAttribute('data-current-step', step);
+      trialModal.setAttribute('aria-hidden', step === 0 ? 'true' : 'false');
+      document.body.classList.toggle('modal-open', step !== 0);
+    };
+
+    const resetTrialForm = () => {
+      stepContainer.querySelectorAll('input').forEach((input) => {
+        if (input.type === 'checkbox' || input.type === 'radio') {
+          input.checked = false;
+        } else {
+          input.value = '';
+        }
+      });
+      stepContainer.querySelectorAll('select').forEach((select) => {
+        select.selectedIndex = 0;
+      });
+    };
+
+    const showTrial = () => {
+      resetTrialForm();
+      setStep(1);
+    };
+    const hideTrial = () => setStep(0);
+
+    document.querySelectorAll('[data-open-trial]').forEach((trigger) => {
+      trigger.addEventListener('click', showTrial);
+    });
+
+    trialModal.querySelectorAll('[data-close-trial]').forEach((closer) => {
+      closer.addEventListener('click', hideTrial);
+    });
+
+    trialModal.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        hideTrial();
+      }
+    });
+
+    trialModal.querySelector('[data-trial-next]').addEventListener('click', () => {
+      setStep(2);
+    });
+
+    trialModal.querySelector('[data-trial-prev]').addEventListener('click', () => {
+      setStep(1);
+    });
+
+    trialModal.querySelector('[data-trial-complete]').addEventListener('click', () => {
+      setStep(3);
+    });
+
+    hideTrial();
+  </script>
 </body>
 </html>
