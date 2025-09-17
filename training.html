@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training Engine | Lifestyle Wan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="feature-page">
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">LW</span>
+        <span class="logo-type">Lifestyle Wan</span>
+      </a>
+      <nav class="primary-nav">
+        <a class="primary-nav__link is-active" href="training.html">Training</a>
+        <a class="primary-nav__link" href="microdosing.html">Micro Dosing</a>
+        <a class="primary-nav__link" href="meal-plan.html">Meal Plan</a>
+        <a class="primary-nav__link" href="contact.html">Contact</a>
+      </nav>
+      <a class="button button--ghost" href="contact.html">Connect</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="feature-hero feature-hero--training">
+      <div class="container feature-hero__grid">
+        <div>
+          <p class="eyebrow">Training Engine</p>
+          <h1>Periodize your program with one dashboard.</h1>
+          <p>
+            Stack strength, speed, and mobility tracks without spreadsheets. Lifestyle Wan’s training engine adapts each block using
+            readiness inputs and syncs automatically with your recovery habits.
+          </p>
+          <div class="feature-hero__actions">
+            <a class="button" href="#curriculum">View programming tools</a>
+            <a class="button button--ghost-blue" href="contact.html">Request setup</a>
+          </div>
+        </div>
+        <div class="feature-hero__media">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=880&q=80" alt="Athlete performing sled push" />
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-detail" id="curriculum">
+      <div class="container feature-detail__grid">
+        <div>
+          <h2>Phase-based templates that adapt</h2>
+          <p>
+            Build out 4-, 8-, or 12-week cycles with auto-progressions for volume, intensity, or density. Shift deloads, swap exercises,
+            and deliver remote or in-person sessions without rebuilding from scratch.
+          </p>
+          <ul class="feature-list">
+            <li>Exercise library with unilateral, velocity, and mobility filters.</li>
+            <li>Auto-progression rules that adjust load, tempo, or density by track.</li>
+            <li>Syncs to Apple Health, Garmin, and wearable HR for better readiness calls.</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h3>Session composer</h3>
+          <p>
+            Drag-and-drop blocks for priming, main sets, accessories, and finisher work. Save as templates or stack into full programs
+            ready to assign.
+          </p>
+          <ul class="feature-list feature-list--compact">
+            <li>Time-under-tension and RPE tags for every movement.</li>
+            <li>Auto-build contrast or complex pairings with suggested rest windows.</li>
+            <li>Printable athlete view or shareable mobile flow.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-detail feature-detail--alt">
+      <div class="container feature-detail__grid">
+        <div>
+          <h2>Accountability built in</h2>
+          <p>
+            Athletes log sessions, attach clips for form review, and complete daily readiness check-ins. Coaches get instant summaries
+            and can pivot the week with a single update.
+          </p>
+          <ul class="feature-list">
+            <li>Video, photo, and voice note feedback loops.</li>
+            <li>Weekly snapshot exporting for athletes or leadership teams.</li>
+            <li>Push and email reminders tuned to your schedule.</li>
+          </ul>
+        </div>
+        <aside class="feature-aside">
+          <h3>Integrations</h3>
+          <p>Connect your wearable data and recovery apps so training adjustments happen automatically.</p>
+          <div class="integration-logos">
+            <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=640&q=80" alt="Wearable devices on a table" />
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div class="feature-cta" id="trial">
+    <div class="container feature-cta__inner">
+      <div>
+        <h2>Ready to deploy the training engine?</h2>
+        <p>Share your roster and we’ll configure the dashboards, templates, and automations for you.</p>
+      </div>
+      <a class="button button--light" href="contact.html">Start conversation</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom__inner">
+      <p>© <span id="year"></span> Lifestyle Wan. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="training.html">Training</a>
+        <a href="microdosing.html">Micro Dosing</a>
+        <a href="meal-plan.html">Meal Plan</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

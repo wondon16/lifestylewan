@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Lifestyle Wan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="feature-page">
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">LW</span>
+        <span class="logo-type">Lifestyle Wan</span>
+      </a>
+      <nav class="primary-nav">
+        <a class="primary-nav__link" href="training.html">Training</a>
+        <a class="primary-nav__link" href="microdosing.html">Micro Dosing</a>
+        <a class="primary-nav__link" href="meal-plan.html">Meal Plan</a>
+        <a class="primary-nav__link is-active" href="contact.html">Contact</a>
+      </nav>
+      <a class="button button--ghost" href="#connect">Connect</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="feature-hero feature-hero--contact">
+      <div class="container feature-hero__grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s build your performance stack.</h1>
+          <p>
+            Whether you’re launching a training cohort, refining a micro dosing protocol, or scaling personalized meal plans, we’ll map
+            the modules to your workflow.
+          </p>
+          <div class="feature-hero__actions">
+            <a class="button" href="#connect">Send a note</a>
+            <a class="button button--ghost-blue" href="mailto:coach@lifestylewan.com">Email directly</a>
+          </div>
+        </div>
+        <div class="feature-hero__media">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=880&q=80" alt="Team collaborating over laptops" />
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-detail" id="connect">
+      <div class="container feature-detail__grid">
+        <div>
+          <h2>Tell us what you’re building</h2>
+          <p>
+            Drop the essentials and we’ll respond within one business day with next steps, resources, and onboarding options.
+          </p>
+          <div class="contact-meta contact-meta--stacked">
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:coach@lifestylewan.com">coach@lifestylewan.com</a>
+            </div>
+            <div>
+              <strong>Signal</strong>
+              <span>@lifestylewan</span>
+            </div>
+            <div>
+              <strong>Office Hours</strong>
+              <span>Mon – Fri · 8am – 6pm PT</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" action="mailto:coach@lifestylewan.com" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="module">Module focus</label>
+          <select id="module" name="module" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Training Engine</option>
+            <option>Micro Dosing Studio</option>
+            <option>Meal Plan Lab</option>
+            <option>Full stack rollout</option>
+          </select>
+
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" rows="5" placeholder="Share milestones, timelines, or links"></textarea>
+
+          <button class="button" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom__inner">
+      <p>© <span id="year"></span> Lifestyle Wan. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="training.html">Training</a>
+        <a href="microdosing.html">Micro Dosing</a>
+        <a href="meal-plan.html">Meal Plan</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

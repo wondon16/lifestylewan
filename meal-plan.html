@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal Plan Lab | Lifestyle Wan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="feature-page">
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">LW</span>
+        <span class="logo-type">Lifestyle Wan</span>
+      </a>
+      <nav class="primary-nav">
+        <a class="primary-nav__link" href="training.html">Training</a>
+        <a class="primary-nav__link" href="microdosing.html">Micro Dosing</a>
+        <a class="primary-nav__link is-active" href="meal-plan.html">Meal Plan</a>
+        <a class="primary-nav__link" href="contact.html">Contact</a>
+      </nav>
+      <a class="button button--ghost" href="contact.html">Connect</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="feature-hero feature-hero--meal">
+      <div class="container feature-hero__grid">
+        <div>
+          <p class="eyebrow">Meal Plan Lab</p>
+          <h1>Design clean bulk menus that evolve with training.</h1>
+          <p>
+            Pair macro-specific meal plans with your current training block. The lab recalculates calories and macros as your bodyweight
+            shifts, keeping dairy-free, high-performance meals ready to deploy.
+          </p>
+          <div class="feature-hero__actions">
+            <a class="button" href="#builder">See meal builder</a>
+            <a class="button button--ghost-blue" href="contact.html">Request recipes</a>
+          </div>
+        </div>
+        <div class="feature-hero__media">
+          <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=880&q=80" alt="Healthy prepared meal containers" />
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-detail" id="builder">
+      <div class="container feature-detail__grid">
+        <div>
+          <h2>Adaptive meal builder</h2>
+          <p>
+            Enter target macros, allergens, and prep time. Lifestyle Wan generates a weekly rotation that aligns with your training
+            block and creates a synced shopping list.
+          </p>
+          <ul class="feature-list">
+            <li>Macros automatically sync with training workload and bodyweight trends.</li>
+            <li>Filters for protein sources, cooking equipment, and prep windows.</li>
+            <li>Batch cooking mode for 2, 3, or 5-day prep cycles.</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h3>Smart shopping lists</h3>
+          <p>
+            Export organized grocery lists grouped by aisle or store. Share with delivery services or teammates instantly.
+          </p>
+          <ul class="feature-list feature-list--compact">
+            <li>Auto-adjust portions when plans change.</li>
+            <li>Swap ingredients with macro recalculations on the fly.</li>
+            <li>Track pantry inventory to avoid overbuying.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-detail feature-detail--alt">
+      <div class="container feature-detail__grid">
+        <div>
+          <h2>Meal logging without friction</h2>
+          <p>
+            Log meals directly from plans, attach photos, and watch compliance scores update across your dashboard.
+          </p>
+          <ul class="feature-list">
+            <li>Barcode scanner and quick-add macros.</li>
+            <li>Integrations with Cronometer, MyFitnessPal, and wearables.</li>
+            <li>Alerts for hydration, electrolytes, and supplementation timing.</li>
+          </ul>
+        </div>
+        <aside class="feature-aside">
+          <h3>Recipe vault</h3>
+          <p>Every recipe includes prep videos, substitutions, and macro breakdowns for different portion sizes.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div class="feature-cta">
+    <div class="container feature-cta__inner">
+      <div>
+        <h2>Want the lab tuned for your kitchen?</h2>
+        <p>We’ll configure weekly menus, delivery integrations, and macro targets that sync with your goals.</p>
+      </div>
+      <a class="button button--light" href="contact.html">Book a call</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom__inner">
+      <p>© <span id="year"></span> Lifestyle Wan. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="training.html">Training</a>
+        <a href="microdosing.html">Micro Dosing</a>
+        <a href="meal-plan.html">Meal Plan</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
