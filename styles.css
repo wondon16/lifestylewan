@@ -272,6 +272,12 @@ main {
   z-index: -1;
 }
 
+.hero-media img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
 .trusted {
   padding: 4.5rem 0;
   background: #fff;
